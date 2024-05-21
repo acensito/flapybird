@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour {
         scoreText.text = score.ToString();
         //desactivamos los paneles de getReady y playButton
         getReady.SetActive(false);
+        gameOver.SetActive(false);
         playButton.SetActive(false);
         //mostramos al jugador
         player.enabled = true;
