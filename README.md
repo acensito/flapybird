@@ -32,6 +32,10 @@ Si deseas contribuir a este proyecto, puedes seguir estos pasos:
 3. Realiza los cambios o mejoras que desees.
 4. Envía una solicitud de extracción a este repositorio.
 
+## Cosas pendientes
+1. Añadirle música de fondo.
+2. Añadirle SFX
+
 ## Licencia
 
 Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más información.
@@ -41,3 +45,6 @@ Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo [LICENSE](
 Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto conmigo.
 
 ¡Diviértete jugando Flappy Bird!
+
+## Log de errores
+21-05-2024: Solventado problema boton play y posicionamiento tras Game Over

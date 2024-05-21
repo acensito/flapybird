@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour {
         getReady.SetActive(false);
         gameOver.SetActive(false);
         playButton.SetActive(false);
+        player.transform.position = new Vector3(0, 0, 0);
         //mostramos al jugador
         player.enabled = true;
         //limpiamos los tubos que pudieran existir de una partida anterior
