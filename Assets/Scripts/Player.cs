@@ -24,15 +24,22 @@ public class Player : MonoBehaviour {
         transform.Translate(direction * Time.deltaTime);
     }
 
+    //
     private void OnTriggerEnter2D(Collider2D collider) {
+        //si colisionamos con un obstaculo
         if (collider.CompareTag("Obstacle")) {
+            //mostramos mensaje de game over en consola
             Debug.Log("Game Over");
-            GameManager.FindAnyObjectByType<GameManager>().GameOver();
+            //llamamos al metodo de game over del game manager
+            GameManager.Instance.GameOver();
         }
 
+        //si colisionamos con un checkpoint
         if (collider.CompareTag("Checkpoint")) {
+            //mostramos mensaje de score en consola
             Debug.Log("Score");
-            GameManager.FindAnyObjectByType<GameManager>().IncreaseScore();
+            //llamamos al metodo de incrementar score del game manager    
+            GameManager.Instance.IncreaseScore();
         }
     }
 
