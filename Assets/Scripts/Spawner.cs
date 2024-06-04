@@ -22,6 +22,6 @@ public class Spawner : MonoBehaviour {
     void SpawnPipe() {
         Vector3 spawnPosition = transform.position;
         spawnPosition.y += Random.Range(minHeight, maxHeight);
-        GameObject pipe = Instantiate(pipePrefab, spawnPosition, Quaternion.identity, GameObject.Find("Spawner").transform);
+        Instantiate(pipePrefab, spawnPosition, Quaternion.identity, GameObject.Find("Spawner").transform);
     }
 }
